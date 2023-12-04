@@ -1,0 +1,28 @@
+body {
+    background-image: url("img10.jpg");
+    color: aliceblue;
+    font-family: roboto mono, Verdana, Tahoma, sans-serif;
+       }
+.text {
+    text-align: center;
+}
+#imgjosetovar{
+    text-align: center;
+}
+#tituprincipal {
+    text-shadow: 2px 5px 5px;
+
+}   
+footer {
+    color: aliceblue;
+    font-family: roboto mono, Verdana, Tahoma, sans-serif;
+}
+.text1{
+    text-align: right;
+}
+a:link {
+    color: aliceblue;
+}
+a:hover{
+    color: darkgrey;
+}
