@@ -23,6 +23,20 @@ footer {
 a:link {
     color: aliceblue;
 }
+a:visited{
+    color: aliceblue;
+}
+
 a:hover{
     color: darkgrey;
+}
+a:active{
+
+    color: blueviolet;
+}
+.subtext{
+    text-align: center;
+    text-shadow: 2px 5px 5px;
+    color: aliceblue;
+    display: inline-block;
 }
