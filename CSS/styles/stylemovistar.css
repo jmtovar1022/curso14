@@ -1,0 +1,246 @@
+
+/*Estilo elaborado por José Tovar, estudiante de LEXPIN*/
+
+/*Eliminamos padding y márgenes que traen los elementos por defecto*/
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+/* Elegimos color y tipografía*/
+body{
+    
+    color: #019DF4;
+    font-family: sans-serif;
+    
+}
+/* Estilos para la barra de navegación */
+nav{
+    display: flex;
+    justify-content: space-between; /* Aleja los elementos lo más posible manteniendo la proporción del espacio*/
+    padding: 8px 16px;
+    align-items: center;
+    font-weight: 180;
+    font-family: sans-serif;
+    
+}
+/*Estilos del Menú superior de la barra de anvegación */
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color:#019DF4;
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+/* estilos del botón eSIM y los demás botones verdes*/
+#verde{
+    font-weight: 700;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: #5BC500;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 120px; /* Coloca el borde redondeado*/
+    border-color: #5BC500;
+    border-width: 1px;
+    cursor: pointer; /* Aparece la manito al pasar el ratón encima de los botones*/
+    transition: background-color 1s, text-decoration 1s, font-weight 1s;
+    
+}
+/* Estilo del botón "Tienda Movistar"*/
+#negro{
+    font-weight: 700;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: white;
+    color: rgb(55,78,93);
+    padding: 10px 14px;
+    border-radius: 120px; 
+    border-color: black;
+    border-width: 1px;
+    cursor: pointer; 
+    transition: background-color 1s, text-decoration 1s, font-weight 1s;
+}
+
+/* Estilo del botón "Mi Movistar"*/
+#azul{
+    font-weight: 700;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: #019DF4;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 120px; /* Coloca el borde redondeado*/
+    border-color: #019DF4;
+    border-width: 1px;
+    cursor: pointer; /* Aparece la manito al pasar el ratón encima de los botones*/
+    transition: background-color 1s, text-decoration 1s, font-weight 1s;
+}
+
+/* asigno propiedad pointer al logo movistar, al menú de la barra de navegación y a los elementos del footer*/
+nav div img, nav div p, footer div h4, footer div li{
+    cursor: pointer;
+}
+/* propiedades hover para el menú de la barra de anvegación*/
+nav div p:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* hover para el botón "Mi Movistar"*/
+#azul:hover {
+    font-weight: 700;
+    color: #019DF4;
+    background-color: white;
+    border: solid;
+    border-color: #019DF4;
+    border-width: 1px;
+}
+/* hover para el botón "Tienda Movistar"*/
+
+#negro:hover {
+    font-weight: 700;
+    color: white;
+    background-color: rgb(55,78,93);
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+/*hover para los botones fondo verde*/
+#verde:hover {
+    font-weight: 700;
+    color: #5BC500;
+    background-color: white;
+    border: solid;
+    border-color: #5BC500;
+    border-width: 1px;
+}
+/*Estilos del Main*/
+main{
+    background-image: url("../images/f2.jpg");
+    background-size: cover;
+}
+
+main section {
+    display:flex;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main section .columna{
+    width: 45vw; 
+    display: flex; 
+    flex-direction: column;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+main section .columna2{
+    width: 45vw; 
+    display:flex;
+    flex-direction: column;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #019DF4;
+    color: white;
+    border-radius: 80px;
+    
+}
+
+
+.navidad{
+    font-weight: 700;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: #5BC500;
+    color: white;
+    padding: 10px 14px;
+    
+    border-radius: 120px; /* Coloca el borde redondeado*/
+    border-color: #5BC500;
+    border-width: 1px;
+    cursor: pointer; /* Aparece la manito al pasar el ratón encima de los botones*/
+    transition: background-color 1s, text-decoration 1s, font-weight 1s;
+}
+
+.navidad:hover {
+    font-weight: 700;
+    color: #5BC500;
+    background-color: white;
+    border: solid;
+    border-color: #5BC500;
+    border-width: 1px;
+}
+
+main section div img{
+    margin-top: 30px;
+}
+
+main section div p {
+    text-align: justify;
+    line-height: 2rem;   
+}
+main section .titular{
+    padding: 30px;
+    text-align: center;
+    
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section2 .columna2{
+    padding: 10px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#col2{
+    padding: 30px 40px;
+    
+}
+
+.columna img{
+    width: 90%;
+    border-radius: 120px;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+
+footer div{
+    line-height: 1.5rem;
+    padding: 30px 0px;
+
+}
+.planes{
+    padding: 0px 15px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+/* Estilo de los titulares del footer*/
+h4{
+    text-decoration: underline;
+}
+/*Estilo de los elementos del footer*/
+ul{
+    color: #019DF4;
+    text-decoration:underline;
+}

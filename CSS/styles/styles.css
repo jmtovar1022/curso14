@@ -1,0 +1,114 @@
+/* Mi primer Comentario*/ 
+
+h3{
+    color: green;
+  }
+h2{
+    color: darkgreen;
+}
+#contenido{
+    color: purple;
+}
+#prueba{
+    width: 100px; /* ancho*/
+    height: 100px; /* alto */
+    background-color: brown; /* color de fondo */
+    font-weight: 900; 
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace; /* tres tipos de letras*/
+    text-align: center;
+    text-decoration: underline; /* propiedades como subrayar */
+    text-decoration-color: chartreuse; /* color para la decoración */
+    text-transform: uppercase; /* cambia todo a mayúsculas*/
+    letter-spacing: 10px; /* Espacio entre letra y letra*/ 
+    word-spacing: 20px;  /* espacio entre palabra y palabra*/
+    line-height: 30px;/* trabajar con border */
+    
+    border-color: blue;
+    /*se debe usar las propiedades border style y border-widht para
+    poder visualizar el border color */ 
+
+    border-style: groove;/* colocar un borde */
+    border-width: 30px; /* ancho del borde*/
+    /* Puedo darle propiedades de border en una sola linea escribiendo
+    una propiedad separada de la otra*/ 
+    
+    /*Ejemplo: */ 
+    border: groove blue 20px; 
+
+    /* Para redondear el borde de un elemento
+    puedo usar de medidas px o %*/ 
+    border-radius: 100%;
+
+    /* Margen es la distancia que existe entre un elemento y otro*/ 
+    margin: 100px;
+    /* Se peude escribir de varias maneras: 
+    margin: 100px; asigna 100 px de margen en las 4 direcciones
+    margin: 100px opx; asigna margen vertical y 0 margen horizontal
+    margin: 100px 200px 0px; margen vertical, horizontal y cero abajo
+    margin: 100px 200px 300px 0px; arriba, derecha, abajo e izquierda
+    */
+   /* padding: es la distancia del borde de la caja con su contenido*/
+
+    padding: 200px;
+    /*Anchura y altura mínima
+    */
+    min-width: 100px;
+    min-height: 100px;
+    /* Anchura y altura máxima*/
+    max-width: 500px;
+    max-height: 500px;
+    /* Estos son los valores mínimos y máximos */ 
+
+    /* 
+    Existen diversas formas de colocar colores en CSS, una de ellas es
+    mencionar el color en idioma inglés, pero también puedes usar
+    código hexadecimal, RGB, HSL.
+     
+    color: #5AAADB;
+    color: #faebd7d7;
+    color: rgb(0,0,0);
+    color: rgba(255,50,20,0.50)
+    color: hsl(0, 100%, 50%)
+    */
+
+    /*
+    REM hace referencia a un tamaño por default quue el navegador tiene
+    , esta medida es relativa pues el tamaño pro default puede cambiar 
+    según el ancho del navegador. Decir 3rem es decir 3 veces ese tamaño
+    por default
+    font-size: 3rem;
+    EM hace referencia al tamaño por default del elemento HTML en si
+    
+    */
+    /*
+    viewport height (altura del navegador)
+    vw = vierport width (anchura del navegador)
+    */
+    height: 100vh;
+    width: 100vw;
+
+    /*COMO CENTRAR UN ELEMENTO*/
+    
+    /* display flex convierte el elementoa utomaticamente 
+    en una fila */
+    display: flex;
+    
+    /* si quisiera que fuese una columna sería:*/
+    flex-direction: column;
+    /* justify content eje principal*/
+    justify-content: center;
+    /* align items eje segundario*/
+    align-items: center;
+
+}
+
+#prueba:hover{
+    background-color: aquamarine;
+    padding: 20;
+}
+P{
+    padding: 50px;
+}
+
+
